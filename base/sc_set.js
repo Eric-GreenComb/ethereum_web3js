@@ -3,11 +3,11 @@ var solc = require('solc');
 var Web3 = require('web3');
 
 const ethereumUri = 'http://localhost:8545';
-const address = '0x30e13613b28a66a215fb31a0a5414a78b6bf7801';
+const address = '0x02359fa0cab1ee4e44e411d97ce2c9c7517a7ccf';
 const pwd = 'a11111';
 const contractPath = "./contracts/SimpleContract.sol";
 
-const myContractAddress = '0x87f20039b624509a58d03a191c41dcdc7884cc33';
+const myContractAddress = '0xd3e86631a7426ab88259a3cc1299c76d0123c956';
 
 /*
 * Connect to ethereum

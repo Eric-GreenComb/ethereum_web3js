@@ -1,0 +1,24 @@
+{
+  "name": "ethereum_web3js",
+  "version": "1.0.0",
+  "description": "ethereum web3js(0.19.0) demo",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Eric-GreenComb/ethereum_web3js.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Eric-GreenComb/ethereum_web3js/issues"
+  },
+  "homepage": "https://github.com/Eric-GreenComb/ethereum_web3js#readme",
+  "dependencies": {
+    "fs": "0.0.1-security",
+    "solc": "0.4.15",
+    "web3": "0.19.0"
+  }
+}

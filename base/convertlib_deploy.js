@@ -3,9 +3,9 @@ var solc = require('solc');
 var Web3 = require('web3');
 
 const ethereumUri = 'http://localhost:8545';
-const address = '0x30e13613b28a66a215fb31a0a5414a78b6bf7801';
+const address = '0x02359fa0cab1ee4e44e411d97ce2c9c7517a7ccf';
 const pwd = 'a1111111';
-const contractPath = "./contracts/SimpleContract.sol";
+const contractPath = "./contracts/ConvertLib.sol";
 
 /*
 * Connect to ethereum
@@ -22,7 +22,6 @@ if (!web3.isConnected()) {
     console.log('connected to ehterum node at ' + ethereumUri);
 }
 
-
 /*
 * Compile Contract and Fetch ABI, bytecode
 */
@@ -37,11 +36,13 @@ for (var contractName in compiledContract.contracts) {
 
 console.log(JSON.stringify(abi, undefined, 2));
 
-
 /*
 * Deploy contract
 */
 bytecode = '0x' + bytecode;
+console.log("====================================");
+console.log(bytecode);
+console.log("====================================");
 // web3.personal.unlockAccount(address, pwd);
 var gasEstimate = web3.eth.estimateGas({ data: bytecode });
 console.log('gasEstimate = ' + gasEstimate);
@@ -66,7 +67,3 @@ var myContractReturned = MyContract.new({
         console.log(err);
     }
 });
-
-(function wait() {
-    setTimeout(wait, 1000);
-})();
