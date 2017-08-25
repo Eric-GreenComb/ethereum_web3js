@@ -35,7 +35,11 @@ node write_data.js
 
 node deploy_convertlib.js
 
-solc --optimize --bin MetaCoin.sol | solc --link --libraries ConvertLib.sol:ConvertLib:0xba548b80b1920d84f1052f88c645c5a7930999a4
+solc --optimize --abi --bin MetaCoin.sol | solc --link --libraries ConvertLib.sol:ConvertLib:0xba548b80b1920d84f1052f88c645c5a7930999a4
+
+solc --abi --bin MetaCoin.sol | solc --link --libraries ConvertLib.sol:ConvertLib:0xb23ce1eaf72508e49266514a7c0f8d4c1de0bb2e
+
+solc --optimize --abi --bin MetaCoin.sol --link ConvertLib.sol 
 
 myContract.address = 0xba548b80b1920d84f1052f88c645c5a7930999a4
 
