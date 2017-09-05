@@ -6,7 +6,7 @@ const ethereumUri = 'http://localhost:8545';
 const address = '0x73e091f128342f54595f6bde83970cb5ec84a6bf';
 const pwd = 'a1111111';
 
-const myContractAddress = '0x9d5564831b075fecb2847ac1d9e9f4f8c82fdd52';
+const myContractAddress = '0x0aef9b5c9f9fba454f01e494f12a3efbf506c256';
 
 /*
 * Connect to ethereum
